@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Creating a cluster.') { 
             steps {
-                 sh "gcloud auth activate-service-account 490274184561-compute@developer.gserviceaccount.com --key-file /home/hari/Documents/key/credentials/test-220275285-8a79e1404dd0.json --project test-220275285"
+                 sh "gcloud auth activate-service-account 490274184561-compute@developer.gserviceaccount.com --key-file /home/hari/Documents/keys/test-220275285-76e1b8994b10.json --project test-220275285"
                  sh "gcloud container clusters create devops-web-cluster \
                       --num-nodes 1 \
                       --machine-type n1-standard-1 \
