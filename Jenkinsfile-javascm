@@ -54,6 +54,7 @@ pipeline {
         }
          stage('Services:') { 
             steps {
+                 sh "sleep 150"
                  sh "kubectl get services"
             }
         }
